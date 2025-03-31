@@ -48,44 +48,7 @@ This is a simple search tool developed as part of Harvard CS50's Web Programming
 
 2. Open your web browser and go to `http://127.0.0.1:8000` (or `http://localhost:8000`).
 
-### Deploying the Application
-
-To deploy the application, you can use a platform like Heroku. Here are the steps:
-
-1. **Install the Heroku CLI**: Follow the instructions on the [Heroku CLI installation page](https://devcenter.heroku.com/articles/heroku-cli).
-
-2. **Log in to Heroku**:
-    ```bash
-    heroku login
-    ```
-
-3. **Create a new Heroku app**:
-    ```bash
-    heroku create
-    ```
-
-4. **Add a `Procfile`**: Create a file named `Procfile` in the root directory of your project with the following content:
-    ```text
-    web: python app.py
-    ```
-
-5. **Commit your changes**:
-    ```bash
-    git add .
-    git commit -m "Prepare app for Heroku deployment"
-    ```
-
-6. **Deploy to Heroku**:
-    ```bash
-    git push heroku main
-    ```
-
-7. **Open your deployed app**:
-    ```bash
-    heroku open
-    ```
-
-### Additional Notes
+3. You should see the search interface.
 
 - Ensure that your `app.py` file is configured to run on the correct host and port for deployment.
 - You may need to set up environment variables for production settings.py
