@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Image Search</title>
+        <style>
+            body {
+                text-align: center;
+                font-family: Arial, sans-serif;
+            }
+
+            .search-bar {
+                margin-top: 20%;
+            }
+
+            .google-logo {
+                font-size: 84px;
+                font-weight: bold;
+            }
+
+            .google-logo span {
+                display: inline-block;
+                margin-right: -8px;
+            }
+
+            .google-logo .g1 { color: #4385f5; }
+            .google-logo .o1 { color: #eb4334; }
+            .google-logo .o2 { color: #fabd05; }
+            .google-logo .g2 { color: #4385f5; }
+            .google-logo .l { color: #35a852; }
+            .google-logo .e { color: #eb4334; }
+
+            input[type="text"] {
+                width: 50%;
+                padding: 10px;
+                border-radius: 24px;
+                border: 1px solid #dfe1e5;
+                box-shadow: none;
+                font-size: 16px;
+                margin-top: 20px;
+            }
+
+            input[type="text"]:hover {
+                box-shadow: 0 1px 6px rgba(32,33,36,.28);
+                border-color: rgba(223,225,229,0);
+            }
+
+            .button-container {
+                margin-top: 30px;
+            }
+
+            input[type="submit"] {
+                background-color: #f8f9fa;
+                border: 1px solid #f8f9fa;
+                border-radius: 4px;
+                color: #3c4043;
+                font-size: 14px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                height: 36px;
+                cursor: pointer;
+            }
+
+            input[type="submit"]:hover {
+                box-shadow: 0 1px 1px rgba(0,0,0,.1);
+                background-color: #f8f9fa;
+                border: 1px solid #dadce0;
+                color: #202124;
+            }
+
+            .links {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+
+            .links a {
+                margin-left: 15px;
+                text-decoration: none;
+                color: rgba(0,0,0,0.87);
+                font-size: 13px;
+            }
+
+            .links a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="links">
+            <a href="index.html">Google Search</a>
+        </div>
+        <div class="search-bar">
+            <div class="google-logo">
+                <span class="g1">G</span>
+                <span class="o1">o</span>
+                <span class="o2">o</span>
+                <span class="g2">g</span>
+                <span class="l">l</span>
+                <span class="e">e</span>
+            </div>
+            <form action="https://www.google.com/search" method="get">
+                <input type="hidden" name="tbm" value="isch">
+                <label>
+                    <input type="text" name="q" placeholder="Search Images">
+                </label>
+                <div class="button-container">
+                    <input type="submit" value="Image Search">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
